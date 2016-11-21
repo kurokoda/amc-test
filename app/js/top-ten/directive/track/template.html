@@ -1,0 +1,13 @@
+<div class="track"
+     ng-controller="amc-app.top-ten.directive.track.controller as controller">
+  <span
+      class="track-title">
+    '{{data.name}}' by {{data.album.artists[0].name}}
+  </span>
+  <button
+      class="{{controller.getButtonClasses()}}"
+      type="button"
+      ng-click="close()">
+    {{controller.getButtonText()}}
+  </button>
+</div>

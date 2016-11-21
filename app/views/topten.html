@@ -1,0 +1,28 @@
+<div
+    ng-controller="amc-app.top-ten.controller.main as controller">
+  <div
+      class="grid-two">
+    <div>
+      <search-form/>
+    </div>
+    <div>
+      <track-list
+          track-source="controller.spotifyService.tracks"
+          type="Add"
+          click-fn="controller.onClickSpotifyTrack"/>
+    </div>
+  </div>
+  <div
+      ng-hide="!controller.listService.tracks.length"
+      class="grid-two">
+    <div>
+      <save-form/>
+    </div>
+    <div>
+      <track-list
+          track-source="controller.listService.tracks"
+          type="Remove"
+          click-fn="controller.onClickTopTenTrack"/>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div
+    class="container"
+    ng-controller="amc-app.top-ten.directive.track-list.controller as controller">
+  <div
+      ng-repeat="track in controller.getTracks() track by $index| limitTo: 20">
+    <track
+        data="track"
+        type="{{type}}"
+        ng-click="controller.callClickFn(track)"/>
+  </div>
+</div>

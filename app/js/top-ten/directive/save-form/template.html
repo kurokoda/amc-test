@@ -1,0 +1,16 @@
+<div ng-controller="amc-app.top-ten.directive.save-form.controller as controller">
+  <h1>Save your top ten list</h1>
+  <p>Enter a name for your playlist and click on "Save"</p>
+  <div class="tt-form">
+    <input
+        type="text"
+        ng-model="controller.query"
+        class="tt-form--input"
+        placeholder="Name your playlist"/>
+    <a
+        class="btn btn-primary btn-sm right"
+        ng-href="./#/output">
+      view
+    </a>
+  </div>
+</div>

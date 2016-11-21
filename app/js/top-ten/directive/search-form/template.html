@@ -1,0 +1,20 @@
+<div ng-controller="amc-app.top-ten.directive.search-form.controller as controller">
+  <h1>Search for songs</h1>
+
+  <p>Type an artist, album, or track name and click on "Submit"</p>
+
+  <div class="tt-form">
+    <input
+        type="text"
+        ng-model="controller.query"
+        class="tt-form--input"
+        placeholder="Ex. 'Pink Floyd'"
+        />
+    <button
+        class="btn btn-primary btn-sm right"
+        type="button"
+        ng-click="controller.submit()">
+      submit
+    </button>
+  </div>
+</div>
